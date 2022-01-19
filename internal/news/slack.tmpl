@@ -1,0 +1,34 @@
+{
+	"blocks": [
+		{
+			"type": "header",
+			"text": {
+				"type": "plain_text",
+				"text": ":envelope: News for {{(index . 0).StartDt.Format "02.01.2006"}}",
+				"emoji": true
+			}
+		},
+		{
+			"type": "divider"
+{{range $item := .}}
+		},
+		{
+			"type": "section",
+			"text": {
+				"type": "mrkdwn",
+				"text": "`{{ $item.StartDtUTC }} UTC ({{ $item.StartDtEET }} EET)`\t:{{ if not $item.IsImportant }}grey_{{ end }}exclamation:\t {{ $item.Title }}"
+			},
+			"fields": [
+				{
+					"type": "mrkdwn",
+					"text": "*Symbol:* {{ $item.Symbol }} / {{ $item.DmSymbols }}"
+				},
+				{
+					"type": "mrkdwn",
+					"text": "*Type:* {{ $item.EventType }}"
+				}
+			]
+{{end}}
+		}
+	]
+}

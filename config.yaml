@@ -1,0 +1,19 @@
+nasdaq-holidays:
+  - Title: Martin Luther King
+    Date: 17.01.2022
+  - Title: Presidents Day
+    Date: 21.02.2022
+  - Title: Good Friday
+    Date: 15.04.2022
+  - Title: Memorial Day
+    Date: 30.052022
+  - Title: Juneteenth Holiday
+    Date: 20.06.2022
+  - Title: Independence Day
+    Date: 4.07.2022
+  - Title: Labor Day
+    Date: 5.09.2022
+  - Title: Thanksgiving Day
+    Date: 24.11.2022
+  - Title: Christmas Holiday
+    Date: 26.12.2022
